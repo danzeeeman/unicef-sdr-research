@@ -1,0 +1,29 @@
+--- qwt-5.2/qwtconfig.pri.pyqwt Sat Jul 11 16:59:22 2009
++++ qwt-5.2/qwtconfig.pri Sat Jul 11 16:59:23 2009
+@@ -48,7 +48,7 @@
+         # might need a debug version. 
+         # Enable debug_and_release + build_all if you want to build both.
+ 
+-        CONFIG           += debug     # release/debug/debug_and_release
++        CONFIG           += release   # release/debug/debug_and_release
+         #CONFIG           += debug_and_release
+         #CONFIG           += build_all
+     }
+@@ -75,7 +75,7 @@
+ # it will be a static library.
+ ######################################################################
+ 
+-CONFIG           += QwtDll
++# CONFIG           += QwtDll
+ 
+ ######################################################################
+ # QwtPlot enables all classes, that are needed to use the QwtPlot 
+@@ -97,7 +97,7 @@
+ # QwtSVGItem.
+ ######################################################################
+ 
+-#CONFIG     += QwtSVGItem
++CONFIG     += QwtSVGItem
+ 
+ ######################################################################
+ # If you have a commercial license you can use the MathML renderer

@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Installation &mdash; PyQwt v5.2.0 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '5.2.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="copyright" title="Copyright" href="copyright.html" />
+    <link rel="top" title="PyQwt v5.2.0 documentation" href="index.html" />
+    <link rel="next" title="PyQwt Reference Guide" href="reference.html" />
+    <link rel="prev" title="Introduction" href="introduction.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="reference.html" title="PyQwt Reference Guide"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="introduction.html" title="Introduction"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">PyQwt v5.2.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="source-code-installation">
+<h2>Source Code Installation<a class="headerlink" href="#source-code-installation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="build-prerequisites">
+<h3>Build Prerequisites<a class="headerlink" href="#build-prerequisites" title="Permalink to this headline">¶</a></h3>
+<p>Recommended build prerequisites for PyQwt-5.2.0 are:</p>
+<ol class="arabic simple">
+<li><a class="reference external" href="http://www.python.org">Python</a>, version 2.6.x and 2.5.x are
+supported.</li>
+<li><a class="reference external" href="http://trolltech.com/products/qt">Qt</a>, version 4.5.x, 4.4.x,
+4.3.x, and 3.3.x  are supported.</li>
+<li><a class="reference external" href="http://www.riverbankcomputing.co.uk/software/sip/intro">SIP</a>,
+version 4.8.x and 4.7.x (x &gt; 3) are supported.</li>
+<li><a class="reference external" href="http://www.riverbankcomputing.co.uk/software/pyqt/intro">PyQt</a>
+for Mac OS X, Windows, and/or X11, version 4.5.x, 4.4.x, 4.3.x,
+3.18.x, and 3.17.x are supported.</li>
+<li>optionally <a class="reference external" href="http://www.scipy.org/NumPy">NumPy</a>, version 1.3.x,
+1.2.x, and 1.1.x are supported.</li>
+<li>optionally <a class="reference external" href="http://qwt.sourceforge.net">Qwt</a>, version 5.2.x,
+5.1.x, and 5.0.x are supported.</li>
+</ol>
+<p>The source package
+<a class="reference external" href="http://prdownloads.sourceforge.net/pyqwt/PyQwt-5.2.0.tar.gz">PyQwt-5.2.0.tar.gz</a>
+contains a snapshot of the Qwt-5.2 subversion bug fix branch which may
+fix some bugs in Qwt-5.2.0.
+I recommend to compile and link the bug fix branch statically into PyQwt.</p>
+<p>To exploit the full power of PyQwt, you should install at least one of
+the numerical Python extensions:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://www.scipy.org/NumPy">NumPy</a></li>
+<li><a class="reference external" href="http://www.stsci.edu/resources/software_hardware/numarray">numarray</a></li>
+<li><a class="reference external" href="http://numpy.scipy.org/">Numeric</a></li>
+</ul>
+<p>and built PyQwt with support for the numerical Python extension(s) of
+your choice.  However, only NumPy is actively developed and numarray and
+Numeric are deprecated.</p>
+<p>PyQwt-5.2.0 and recent versions of the numerical Python extensions support
+the <a class="reference external" href="http://numpy.scipy.org/array_interface.shtml">N-D array interface</a>
+protocol.  Therefore, PyQwt supports those extensions, even if they have not
+been installed when PyQwt has been built. In this case, the functionality is
+somewhat reduced, since conversion from an QImage to a Numerical
+Python array is not supported.</p>
+</div>
+<div class="section" id="id2">
+<h3>Installation<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>The installation procedure consists of three steps:</p>
+<ol class="arabic">
+<li><p class="first">Unpack PyQwt-5.2.0.tar.gz.</p>
+</li>
+<li><p class="first">Invoke the following commands to build PyQwt-5.2.0 for Qt-4:</p>
+<div class="highlight-python"><pre>cd PyQwt-5.2.0
+cd configure
+python configure.py -Q ../qwt-5.2
+make
+make install</pre>
+</div>
+<p>or invoke the commands to build PyQwt-5.2.0 for Qt-3:</p>
+<div class="highlight-python"><pre>cd PyQwt-5.2.0
+cd configure
+python configure.py -3 -Q ../qwt-5.2
+make
+make install</pre>
+</div>
+<p>This assumes that the correct Python interpreter is on your path. Replace
+<strong>make</strong> by <strong>nmake</strong>, if you use Microsoft Visual C++.
+The commands build PyQwt against the included Qwt subversion snapshot and
+install PyQwt.
+Test the installation by playing with the example programs.</p>
+</li>
+<li><p class="first">Fine tune (optional):</p>
+<ul>
+<li><p class="first">to use a Qwt library already installed on your system invoke
+commands similar to:</p>
+<div class="highlight-python"><pre>python configure.py -I/usr/include/qwt -lqwt
+make
+make install</pre>
+</div>
+<p>where the Qwt header files are assumed to be installed in
+<tt class="docutils literal"><span class="pre">/usr/include/qwt</span></tt>.</p>
+<p>If the linker fails to find the qwt library, add:</p>
+<div class="highlight-python"><pre>-L /directory/with/qwt/library</pre>
+</div>
+<p>to the <strong>configure.py</strong> options.</p>
+</li>
+</ul>
+<p>The configure.py script takes many options. The command:</p>
+<div class="highlight-python"><pre>python configure.py -h</pre>
+</div>
+<p>displays a full list of the available options</p>
+<div class="highlight-python"><pre>Usage: python configure.py [options]
+
+Each option takes at most one argument, but some options
+accumulate arguments when repeated. For example, invoke:
+
+	python configure.py -I . -I ..
+
+to search the current *and* parent directories for headers.
+
+Options:
+  -h, --help            show this help message and exit
+
+  Common options:
+    -3, --qt3           build for Qt3 and PyQt [default Qt4]
+    -4, --qt4           build for Qt4 and PyQt4 [default Qt4]
+    -Q /sources/of/qwt, --qwt-sources=/sources/of/qwt
+                        compile and link the Qwt source files in
+                        /sources/of/qwt statically into PyQwt
+    -I /usr/lib/qt3/include/qwt, --extra-include-dirs=/usr/lib/qt3/include/qwt
+                        add an extra directory to search for headers (the
+                        compiler must be able to find the Qwt headers without
+                        the -Q option)
+    -L /usr/lib/qt3/lib, --extra-lib-dirs=/usr/lib/qt3/lib
+                        add an extra directory to search for libraries (the
+                        linker must be able to find the Qwt library without
+                        the -Q option)
+    -j N, --jobs=N      concatenate the SIP generated code into N files
+                        [default 1 per class] (to speed up make by running
+                        simultaneous jobs on multiprocessor systems)
+
+  Make options:
+    --debug             enable debugging symbols [default disabled]
+    --extra-cflags=EXTRA_CFLAG
+                        add an extra C compiler flag
+    --extra-cxxflags=EXTRA_CXXFLAG
+                        add an extra C++ compiler flag
+    -D HAS_EXTRA_SENSORY_PERCEPTION, --extra-defines=HAS_EXTRA_SENSORY_PERCEPTION
+                        add an extra preprocessor definition
+    -l extra_sensory_perception, --extra-libs=extra_sensory_perception
+                        add an extra library
+    --extra-lflags=EXTRA_LFLAG
+                        add an extra linker flag
+
+  SIP options:
+    -x EXTRA_SENSORY_PERCEPTION, --excluded-features=EXTRA_SENSORY_PERCEPTION
+                        add a feature for SIP to exclude (normally one of the
+                        features in sip/features.sip)
+    -t EXTRA_SENSORY_PERCEPTION, --timelines=EXTRA_SENSORY_PERCEPTION
+                        add a timeline option for SIP (normally one of the
+                        timeline options in sip/timelines.sip)
+    --sip-include-dirs=SIP_INCLUDE_DIR
+                        add an extra directory for SIP to search
+    --trace             enable trace of the execution of the bindings [default
+                        disabled]
+
+  Detection options:
+    --disable-numarray  disable detection and use of numarray [default
+                        enabled]
+    --disable-numeric   disable detection and use of Numeric [default enabled]
+    --disable-numpy     disable detection and use of NumPy [default enabled]
+
+  Install options:
+    --module-install-path=MODULE_INSTALL_PATH
+                        specify the install directory for the Python modules
+</pre>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="troubleshooting-and-getting-help">
+<h3>Troubleshooting and getting help<a class="headerlink" href="#troubleshooting-and-getting-help" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">Check whether all development packages have been installed when
+<strong>make</strong> produces lots of errors on Linux.</p>
+</li>
+<li><p class="first">If you fail to install PyQwt, unpack PyQwt-5.2.0.tar.gz into a
+clean directory and create two log files containing <tt class="docutils literal"><span class="pre">stdout</span></tt>
+<em>and</em> <tt class="docutils literal"><span class="pre">stderr</span></tt>:</p>
+<div class="highlight-python"><pre>python configure.py --your --options 2&amp;&gt;1 &gt;configure.log
+make 2&amp;&gt;1 &gt;make.log</pre>
+</div>
+<p>Send the log files to the
+<a class="reference external" href="mailto:pyqwt-users&#37;&#52;&#48;lists&#46;sourceforge&#46;net">mailing list</a> after
+<a class="reference external" href="http://lists.sourceforge.net/lists/listinfo/pyqwt-users">subscribing</a>  to the
+mailing list, because the mailing list is for subscribers only, see
+<a class="reference external" href="introduction.html#getting-help"><em>Getting help</em></a>.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="windows-binary-installer">
+<h2>Windows Binary Installer<a class="headerlink" href="#windows-binary-installer" title="Permalink to this headline">¶</a></h2>
+<p>Make sure that you have installed:</p>
+<ol class="arabic simple">
+<li><a class="reference external" href="http://www.python.org/ftp/python/2.6.2/python-2.6.2.msi">python-2.6.2.msi</a></li>
+<li><a class="reference external" href="http://prdownloads.sourceforge.net/numpy/numpy-1.3.0-win32-superpack-python2.6.exe">numpy-1.3.0-win32-superpack-python2.6.exe</a></li>
+<li><a class="reference external" href="http://pyqwt.sourceforge.net/support/PyQt-Py2.6-gpl-4.5.4-1.exe">PyQt-Py2.6-gpl-4.5.4-1.exe</a></li>
+</ol>
+<p>before installing
+<a class="reference external" href="http://prdownloads.sourceforge.net/pyqwt/PyQwt5.2.0-Python2.6-PyQt4.5.4-NumPy1.3.0-1.exe">PyQwt5.2.0-Python2.6-PyQt4.5.4-NumPy1.3.0-1.exe</a>.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Installation</a><ul>
+<li><a class="reference external" href="#source-code-installation">Source Code Installation</a><ul>
+<li><a class="reference external" href="#build-prerequisites">Build Prerequisites</a></li>
+<li><a class="reference external" href="#id2">Installation</a></li>
+<li><a class="reference external" href="#troubleshooting-and-getting-help">Troubleshooting and getting help</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#windows-binary-installer">Windows Binary Installer</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="introduction.html"
+                                  title="previous chapter">Introduction</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="reference.html"
+                                  title="next chapter">PyQwt Reference Guide</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="_sources/installation.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+          <div id="searchbox" style="display: none">
+            <h3>Quick search</h3>
+              <form class="search" action="search.html" method="get">
+                <input type="text" name="q" size="18" />
+                <input type="submit" value="Go" />
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+              <p class="searchtip" style="font-size: 90%">
+              Enter search terms or a module, class or function name.
+              </p>
+          </div>
+          <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="reference.html" title="PyQwt Reference Guide"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="introduction.html" title="Introduction"
+             >previous</a> |</li>
+        <li><a href="index.html">PyQwt v5.2.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+      &copy; <a href="copyright.html">Copyright</a> 2001-2009, Gerard Vermeulen.
+      Last updated on Aug 02, 2009.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+  </body>
+</html>

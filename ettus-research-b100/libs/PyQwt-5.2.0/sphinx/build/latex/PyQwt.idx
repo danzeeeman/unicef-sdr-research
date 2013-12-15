@@ -1,0 +1,121 @@
+\indexentry{PyQt4.Qwt5 (module)|hyperpage}{9}
+\indexentry{QwtAbstractScale (class in PyQt4.Qwt5)|hyperpage}{9}
+\indexentry{QwtAbstractScaleDraw (class in PyQt4.Qwt5)|hyperpage}{9}
+\indexentry{QwtAbstractSlider (class in PyQt4.Qwt5)|hyperpage}{9}
+\indexentry{QwtAlphaColorMap (class in PyQt4.Qwt5)|hyperpage}{9}
+\indexentry{QwtArrayData (class in PyQt4.Qwt5)|hyperpage}{9}
+\indexentry{QwtArrayDouble (class in PyQt4.Qwt5)|hyperpage}{9}
+\indexentry{QwtArrayInt (class in PyQt4.Qwt5)|hyperpage}{9}
+\indexentry{QwtArrayQwtDoubleInterval (class in PyQt4.Qwt5)|hyperpage}{9}
+\indexentry{QwtArrayQwtDoublePoint (class in PyQt4.Qwt5)|hyperpage}{9}
+\indexentry{QwtArrowButton (class in PyQt4.Qwt5)|hyperpage}{9}
+\indexentry{QwtClipper (class in PyQt4.Qwt5)|hyperpage}{9}
+\indexentry{QwtColorMap (class in PyQt4.Qwt5)|hyperpage}{9}
+\indexentry{QwtCompass (class in PyQt4.Qwt5)|hyperpage}{10}
+\indexentry{QwtCompassMagnetNeedle (class in PyQt4.Qwt5)|hyperpage}{10}
+\indexentry{QwtCompassRose (class in PyQt4.Qwt5)|hyperpage}{10}
+\indexentry{QwtCompassWindArrow (class in PyQt4.Qwt5)|hyperpage}{10}
+\indexentry{QwtCounter (class in PyQt4.Qwt5)|hyperpage}{10}
+\indexentry{QwtCurveFitter (class in PyQt4.Qwt5)|hyperpage}{10}
+\indexentry{QwtData (class in PyQt4.Qwt5)|hyperpage}{10}
+\indexentry{QwtDial (class in PyQt4.Qwt5)|hyperpage}{10}
+\indexentry{QwtDialNeedle (class in PyQt4.Qwt5)|hyperpage}{10}
+\indexentry{QwtDialScaleDraw (class in PyQt4.Qwt5)|hyperpage}{10}
+\indexentry{QwtDialSimpleNeedle (class in PyQt4.Qwt5)|hyperpage}{10}
+\indexentry{QwtDoubleInterval (class in PyQt4.Qwt5)|hyperpage}{10}
+\indexentry{QwtDoublePoint (class in PyQt4.Qwt5)|hyperpage}{10}
+\indexentry{QwtDoubleRange (class in PyQt4.Qwt5)|hyperpage}{11}
+\indexentry{QwtDoubleRect (class in PyQt4.Qwt5)|hyperpage}{11}
+\indexentry{QwtDoubleSize (class in PyQt4.Qwt5)|hyperpage}{11}
+\indexentry{QwtDynGridLayout (class in PyQt4.Qwt5)|hyperpage}{11}
+\indexentry{QwtEventPattern (class in PyQt4.Qwt5)|hyperpage}{11}
+\indexentry{QwtIntervalData (class in PyQt4.Qwt5)|hyperpage}{11}
+\indexentry{QwtKnob (class in PyQt4.Qwt5)|hyperpage}{11}
+\indexentry{QwtLegend (class in PyQt4.Qwt5)|hyperpage}{11}
+\indexentry{QwtLegendItem (class in PyQt4.Qwt5)|hyperpage}{11}
+\indexentry{QwtLegendItemManager (class in PyQt4.Qwt5)|hyperpage}{11}
+\indexentry{QwtLinearColorMap (class in PyQt4.Qwt5)|hyperpage}{11}
+\indexentry{QwtLinearScaleEngine (class in PyQt4.Qwt5)|hyperpage}{11}
+\indexentry{QwtLog10ScaleEngine (class in PyQt4.Qwt5)|hyperpage}{11}
+\indexentry{QwtLegendMagnifier (class in PyQt4.Qwt5)|hyperpage}{11}
+\indexentry{QwtMetricsMap (class in PyQt4.Qwt5)|hyperpage}{11}
+\indexentry{QwtPaintBuffer (class in PyQt4.Qwt5)|hyperpage}{12}
+\indexentry{QwtPainter (class in PyQt4.Qwt5)|hyperpage}{12}
+\indexentry{QwtPanner (class in PyQt4.Qwt5)|hyperpage}{12}
+\indexentry{QwtPicker (class in PyQt4.Qwt5)|hyperpage}{12}
+\indexentry{QwtPickerClickPointMachine (class in PyQt4.Qwt5)|hyperpage}{12}
+\indexentry{QwtPickerClickRectMachine (class in PyQt4.Qwt5)|hyperpage}{12}
+\indexentry{QwtPickerDragPointMachine (class in PyQt4.Qwt5)|hyperpage}{12}
+\indexentry{QwtPickerDragRectMachine (class in PyQt4.Qwt5)|hyperpage}{12}
+\indexentry{QwtPickerMachine (class in PyQt4.Qwt5)|hyperpage}{12}
+\indexentry{QwtPickerPolygonMachine (class in PyQt4.Qwt5)|hyperpage}{12}
+\indexentry{QwtPlainTextEngine (class in PyQt4.Qwt5)|hyperpage}{12}
+\indexentry{QwtPlot (class in PyQt4.Qwt5)|hyperpage}{12}
+\indexentry{print (C function)|hyperpage}{12}
+\indexentry{print (C function)|hyperpage}{12}
+\indexentry{QwtPlotCanvas (class in PyQt4.Qwt5)|hyperpage}{12}
+\indexentry{QwtPlotCurve (class in PyQt4.Qwt5)|hyperpage}{12}
+\indexentry{setData (C function)|hyperpage}{12}
+\indexentry{setRawData (C function)|hyperpage}{12}
+\indexentry{QwtPlotDict (class in PyQt4.Qwt5)|hyperpage}{12}
+\indexentry{QwtPlotGrid (class in PyQt4.Qwt5)|hyperpage}{13}
+\indexentry{QwtPlotItem (class in PyQt4.Qwt5)|hyperpage}{13}
+\indexentry{QwtPlotLayout (class in PyQt4.Qwt5)|hyperpage}{13}
+\indexentry{QwtPlotMagnifier (class in PyQt4.Qwt5)|hyperpage}{13}
+\indexentry{QwtPlotMarker (class in PyQt4.Qwt5)|hyperpage}{13}
+\indexentry{QwtPlotPanner (class in PyQt4.Qwt5)|hyperpage}{13}
+\indexentry{QwtPlotPicker (class in PyQt4.Qwt5)|hyperpage}{13}
+\indexentry{trackerText (C function)|hyperpage}{13}
+\indexentry{QwtPlotPrintFilter (class in PyQt4.Qwt5)|hyperpage}{13}
+\indexentry{QwtPlotRasterItem (class in PyQt4.Qwt5)|hyperpage}{13}
+\indexentry{QwtPlotScaleItem (class in PyQt4.Qwt5)|hyperpage}{13}
+\indexentry{QwtPlotSpectrogram (class in PyQt4.Qwt5)|hyperpage}{13}
+\indexentry{QwtPlotSvgItem (class in PyQt4.Qwt5)|hyperpage}{13}
+\indexentry{QwtPlotZoomer (class in PyQt4.Qwt5)|hyperpage}{13}
+\indexentry{QwtPolygon (class in PyQt4.Qwt5)|hyperpage}{13}
+\indexentry{QwtPolygonFData (class in PyQt4.Qwt5)|hyperpage}{13}
+\indexentry{QwtRasterData (class in PyQt4.Qwt5)|hyperpage}{13}
+\indexentry{QwtRect (class in PyQt4.Qwt5)|hyperpage}{13}
+\indexentry{QwtRichTextEngine (class in PyQt4.Qwt5)|hyperpage}{13}
+\indexentry{QwtRoundScaleDraw (class in PyQt4.Qwt5)|hyperpage}{13}
+\indexentry{QwtScaleArithmic (class in PyQt4.Qwt5)|hyperpage}{14}
+\indexentry{QwtScaleDiv (class in PyQt4.Qwt5)|hyperpage}{14}
+\indexentry{QwtScaleDiv (C function)|hyperpage}{14}
+\indexentry{QwtScaleDiv (C function)|hyperpage}{14}
+\indexentry{QwtScaleDraw (class in PyQt4.Qwt5)|hyperpage}{14}
+\indexentry{QwtScaleEngine (class in PyQt4.Qwt5)|hyperpage}{14}
+\indexentry{QwtScaleMap (class in PyQt4.Qwt5)|hyperpage}{14}
+\indexentry{QwtScaleMap (C function)|hyperpage}{14}
+\indexentry{QwtScaleTransformation (class in PyQt4.Qwt5)|hyperpage}{14}
+\indexentry{QwtScaleWidget (class in PyQt4.Qwt5)|hyperpage}{14}
+\indexentry{QwtSimpleCompassRose (class in PyQt4.Qwt5)|hyperpage}{14}
+\indexentry{QwtSlider (class in PyQt4.Qwt5)|hyperpage}{14}
+\indexentry{QwtSpline (class in PyQt4.Qwt5)|hyperpage}{14}
+\indexentry{QwtSplineCurveFitter (class in PyQt4.Qwt5)|hyperpage}{14}
+\indexentry{QwtSymbol (class in PyQt4.Qwt5)|hyperpage}{14}
+\indexentry{QwtText (class in PyQt4.Qwt5)|hyperpage}{14}
+\indexentry{QwtTextEngine (class in PyQt4.Qwt5)|hyperpage}{14}
+\indexentry{QwtTextLabel (class in PyQt4.Qwt5)|hyperpage}{14}
+\indexentry{QwtThermo (class in PyQt4.Qwt5)|hyperpage}{14}
+\indexentry{QwtWheel (class in PyQt4.Qwt5)|hyperpage}{14}
+\indexentry{toImage() (in module PyQt4.Qwt5)|hyperpage}{15}
+\indexentry{toNumarray() (in module PyQt4.Qwt5)|hyperpage}{15}
+\indexentry{toNumeric() (in module PyQt4.Qwt5)|hyperpage}{15}
+\indexentry{toNumpy() (in module PyQt4.Qwt5)|hyperpage}{15}
+\indexentry{to\_na\_array() (in module PyQt4.Qwt5)|hyperpage}{15}
+\indexentry{to\_np\_array() (in module PyQt4.Qwt5)|hyperpage}{15}
+\indexentry{PyQt4.Qwt5.qplt (module)|hyperpage}{16}
+\indexentry{Axis (class in PyQt4.Qwt5.qplt)|hyperpage}{17}
+\indexentry{Curve (class in PyQt4.Qwt5.qplt)|hyperpage}{17}
+\indexentry{IPlot (class in PyQt4.Qwt5.qplt)|hyperpage}{17}
+\indexentry{Pen (class in PyQt4.Qwt5.qplt)|hyperpage}{17}
+\indexentry{Plot (class in PyQt4.Qwt5.qplt)|hyperpage}{17}
+\indexentry{clearZoomStack() (Plot method)|hyperpage}{18}
+\indexentry{formatCoordinates() (Plot method)|hyperpage}{18}
+\indexentry{gracePlot() (Plot method)|hyperpage}{18}
+\indexentry{plot() (Plot method)|hyperpage}{18}
+\indexentry{setZoomerMouseEventSet() (Plot method)|hyperpage}{18}
+\indexentry{toggleVisibility() (Plot method)|hyperpage}{18}
+\indexentry{Symbol (class in PyQt4.Qwt5.qplt)|hyperpage}{18}
+\indexentry{PyQt4.Qwt5.grace (module)|hyperpage}{18}
+\indexentry{GraceProcess (class in PyQt4.Qwt5.grace)|hyperpage}{18}

@@ -1,0 +1,18 @@
+Metadata-Version: 1.0
+Name: PyQwt
+Version: 5.2.0
+Summary: Python bindings for the Qwt library
+Home-page: http://pyqwt.sourceforge.net
+Author: Gerard Vermeulen
+Author-email: gerard.vermeulen@grenoble.cnrs.fr
+License: GPL
+Description: 
+        PyQwt is a set of Python bindings for the Qwt C++ class library
+        which extends the Qt framework with widgets for scientific,
+        engineering, and scientific applications.  It provides a widget
+        to plot data points in two dimensions and various widgets to
+        display and control bounded or unbounded floating point values.
+        
+Platform: Unix
+Platform: Windows
+Platform: Mac OS X

@@ -1,0 +1,9 @@
+\begin{theindex}
+\def\bigletter#1{{\Large\sffamily#1}\nopagebreak\vspace{1mm}}
+
+  \bigletter P
+  \item {\texttt  {PyQt4.Qwt5}}, \hyperpage{9}
+  \item {\texttt  {PyQt4.Qwt5.grace}}, \hyperpage{18}
+  \item {\texttt  {PyQt4.Qwt5.qplt}}, \hyperpage{16}
+
+\end{theindex}

@@ -1,0 +1,23 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}NumPy}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Qwt}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}PyQwt with NumPy}{2}{section.1.3}
+\contentsline {section}{\numberline {1.4}Getting help}{4}{section.1.4}
+\contentsline {chapter}{\numberline {2}Installation}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Source Code Installation}{5}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Build Prerequisites}{5}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Installation}{5}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Troubleshooting and getting help}{7}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}Windows Binary Installer}{7}{section.2.2}
+\contentsline {chapter}{\numberline {3}PyQwt Reference Guide}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}\texttt {PyQt4.Qwt5}}{9}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Class reference}{9}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Function reference}{15}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Template reference}{15}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}\texttt {PyQt4.Qwt5.qplt}}{16}{section.3.2}
+\contentsline {section}{\numberline {3.3}\texttt {PyQt4.Qwt5.grace}}{18}{section.3.3}
+\contentsline {chapter}{\numberline {4}Copyright}{19}{chapter.4}
+\contentsline {chapter}{\numberline {5}Indices and Tables}{21}{chapter.5}
+\contentsline {chapter}{Module Index}{23}{section*.2}
+\contentsline {chapter}{Index}{25}{section*.3}

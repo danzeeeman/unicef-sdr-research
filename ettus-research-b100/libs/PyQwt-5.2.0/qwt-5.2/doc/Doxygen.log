@@ -1,0 +1,102 @@
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_plot_zoomer.cpp:354: Warning: no matching class member found for
+  void QwtPlotZoomer::setZoomStack(const QStack< QwtDoubleRect > &zoomStack, int zoomRectIndex)
+Possible candidates:
+  void QwtPlotZoomer::setZoomStack(const QStack< QwtDoubleRect > &, int zoomRectIndex=-1)
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_abstract_slider.h:181: Warning: Member setMouseOffset(double) (function) of class QwtAbstractSlider is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_abstract_slider.h:182: Warning: Member mouseOffset() const  (function) of class QwtAbstractSlider is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_abstract_slider.h:184: Warning: Member scrollMode() const  (function) of class QwtAbstractSlider is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_double_interval.h:87: Warning: Member operator|=(double) (function) of class QwtDoubleInterval is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_event_pattern.h:155: Warning: Member KeyPattern(int k=0, int st=Qt::NoButton) (function) of class QwtEventPattern::KeyPattern is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_event_pattern.h:160: Warning: Member key (variable) of class QwtEventPattern::KeyPattern is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_event_pattern.h:161: Warning: Member state (variable) of class QwtEventPattern::KeyPattern is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_event_pattern.h:141: Warning: Member MousePattern(int btn=Qt::NoButton, int st=Qt::NoButton) (function) of class QwtEventPattern::MousePattern is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_event_pattern.h:146: Warning: Member button (variable) of class QwtEventPattern::MousePattern is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_event_pattern.h:147: Warning: Member state (variable) of class QwtEventPattern::MousePattern is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_magnifier.cpp:455: Warning: argument 'ke' of command @param is not found in the argument list of QwtMagnifier::widgetKeyReleaseEvent(QKeyEvent *)
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_layout_metrics.h:48: Warning: Member isIdentity() const  (function) of class QwtMetricsMap is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_layout_metrics.h:51: Warning: Member setMetrics(const QPaintDevice *layoutMetrics, const QPaintDevice *deviceMetrics) (function) of class QwtMetricsMap is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_layout_metrics.h:53: Warning: Member layoutToDeviceX(int x) const  (function) of class QwtMetricsMap is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_layout_metrics.h:54: Warning: Member deviceToLayoutX(int x) const  (function) of class QwtMetricsMap is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_layout_metrics.h:55: Warning: Member screenToLayoutX(int x) const  (function) of class QwtMetricsMap is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_layout_metrics.h:56: Warning: Member layoutToScreenX(int x) const  (function) of class QwtMetricsMap is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_layout_metrics.h:58: Warning: Member layoutToDeviceY(int y) const  (function) of class QwtMetricsMap is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_layout_metrics.h:59: Warning: Member deviceToLayoutY(int y) const  (function) of class QwtMetricsMap is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_layout_metrics.h:60: Warning: Member screenToLayoutY(int y) const  (function) of class QwtMetricsMap is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_layout_metrics.h:61: Warning: Member layoutToScreenY(int y) const  (function) of class QwtMetricsMap is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_layout_metrics.h:63: Warning: Member layoutToDevice(const QPoint &, const QPainter *=NULL) const  (function) of class QwtMetricsMap is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_layout_metrics.h:64: Warning: Member deviceToLayout(const QPoint &, const QPainter *=NULL) const  (function) of class QwtMetricsMap is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_layout_metrics.h:65: Warning: Member screenToLayout(const QPoint &) const  (function) of class QwtMetricsMap is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_layout_metrics.h:66: Warning: Member layoutToScreen(const QPoint &point) const  (function) of class QwtMetricsMap is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_layout_metrics.h:69: Warning: Member layoutToDevice(const QSize &) const  (function) of class QwtMetricsMap is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_layout_metrics.h:70: Warning: Member deviceToLayout(const QSize &) const  (function) of class QwtMetricsMap is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_layout_metrics.h:71: Warning: Member screenToLayout(const QSize &) const  (function) of class QwtMetricsMap is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_layout_metrics.h:72: Warning: Member layoutToScreen(const QSize &) const  (function) of class QwtMetricsMap is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_layout_metrics.h:74: Warning: Member layoutToDevice(const QRect &, const QPainter *=NULL) const  (function) of class QwtMetricsMap is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_layout_metrics.h:75: Warning: Member deviceToLayout(const QRect &, const QPainter *=NULL) const  (function) of class QwtMetricsMap is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_layout_metrics.h:76: Warning: Member screenToLayout(const QRect &) const  (function) of class QwtMetricsMap is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_layout_metrics.h:77: Warning: Member layoutToScreen(const QRect &) const  (function) of class QwtMetricsMap is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_layout_metrics.h:80: Warning: Member layoutToDevice(const QwtPolygon &, const QPainter *=NULL) const  (function) of class QwtMetricsMap is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_layout_metrics.h:82: Warning: Member deviceToLayout(const QwtPolygon &, const QPainter *=NULL) const  (function) of class QwtMetricsMap is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_painter.h:117: Warning: Member drawFocusRect(QPainter *, QWidget *) (function) of class QwtPainter is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_painter.h:118: Warning: Member drawFocusRect(QPainter *, QWidget *, const QRect &) (function) of class QwtPainter is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_painter.h:122: Warning: Member drawColorBar(QPainter *painter, const QwtColorMap &, const QwtDoubleInterval &, const QwtScaleMap &, Qt::Orientation, const QRect &) (function) of class QwtPainter is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_picker_machine.h:47: Warning: Member CommandList (typedef) of class QwtPickerMachine is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_plot.h:137: Warning: Member applyProperties(const QString &) (function) of class QwtPlot is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_plot.h:138: Warning: Member grabProperties() const  (function) of class QwtPlot is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_plot_item.cpp:468: Warning: argument 'xScaleDiv' of command @param is not found in the argument list of QwtPlotItem::updateScaleDiv(const QwtScaleDiv &, const QwtScaleDiv &)
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_plot_item.cpp:468: Warning: argument 'yScaleDiv' of command @param is not found in the argument list of QwtPlotItem::updateScaleDiv(const QwtScaleDiv &, const QwtScaleDiv &)
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_plot_printfilter.h:75: Warning: Member apply(QwtPlotItem *) const  (function) of class QwtPlotPrintFilter is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_plot_printfilter.h:76: Warning: Member reset(QwtPlotItem *) const  (function) of class QwtPlotPrintFilter is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_plot_rescaler.h:66: Warning: Member ExpandingDirection (enumeration) of class QwtPlotRescaler is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_plot_rescaler.h:95: Warning: Member setIntervalHint(int axis, const QwtDoubleInterval &) (function) of class QwtPlotRescaler is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_plot_rescaler.h:96: Warning: Member intervalHint(int axis) const  (function) of class QwtPlotRescaler is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_plot_rescaler.h:109: Warning: Member canvasResizeEvent(QResizeEvent *) (function) of class QwtPlotRescaler is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_plot_zoomer.h:80: Warning: Member setZoomStack(const QStack< QwtDoubleRect > &, int zoomRectIndex=-1) (function) of class QwtPlotZoomer is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_raster_data.h:65: Warning: Member ContourLines (typedef) of class QwtRasterData is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_raster_data.cpp:225: Warning: argument 'rect' of command @param is not found in the argument list of QwtRasterData::initRaster(const QwtDoubleRect &, const QSize &raster)
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_raster_data.cpp:258: Warning: argument 'rect' of command @param is not found in the argument list of QwtRasterData::rasterHint(const QwtDoubleRect &) const
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_scale_map.h:87: Warning: Member LogMin (variable) of class QwtScaleMap is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_scale_map.h:88: Warning: Member LogMax (variable) of class QwtScaleMap is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_scale_map.h:23: Warning: Member Type (enumeration) of class QwtScaleTransformation is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_scale_map.cpp:58: Warning: argument 'x' of command @param is not found in the argument list of QwtScaleTransformation::invXForm(double p, double p1, double p2, double s1, double s2) const
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_scale_map.cpp:58: Warning: The following parameters of QwtScaleTransformation::invXForm(double p, double p1, double p2, double s1, double s2) const are not documented:
+  parameter 'p'
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_scale_map.cpp:32: Warning: argument 'x' of command @param is not found in the argument list of QwtScaleTransformation::xForm(double s, double s1, double s2, double p1, double p2) const
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_scale_map.cpp:32: Warning: argument 'x1' of command @param is not found in the argument list of QwtScaleTransformation::xForm(double s, double s1, double s2, double p1, double p2) const
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_scale_map.cpp:32: Warning: argument 'x2' of command @param is not found in the argument list of QwtScaleTransformation::xForm(double s, double s1, double s2, double p1, double p2) const
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_scale_map.cpp:32: Warning: argument 'y1' of command @param is not found in the argument list of QwtScaleTransformation::xForm(double s, double s1, double s2, double p1, double p2) const
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_scale_map.cpp:32: Warning: argument 'y2' of command @param is not found in the argument list of QwtScaleTransformation::xForm(double s, double s1, double s2, double p1, double p2) const
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_scale_map.cpp:32: Warning: The following parameters of QwtScaleTransformation::xForm(double s, double s1, double s2, double p1, double p2) const are not documented:
+  parameter 's'
+  parameter 's1'
+  parameter 's2'
+  parameter 'p1'
+  parameter 'p2'
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_scale_widget.h:86: Warning: Member setColorBarEnabled(bool) (function) of class QwtScaleWidget is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_scale_widget.h:87: Warning: Member isColorBarEnabled() const  (function) of class QwtScaleWidget is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_scale_widget.h:89: Warning: Member setColorBarWidth(int) (function) of class QwtScaleWidget is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_scale_widget.h:90: Warning: Member colorBarWidth() const  (function) of class QwtScaleWidget is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_scale_widget.h:92: Warning: Member setColorMap(const QwtDoubleInterval &, const QwtColorMap &) (function) of class QwtScaleWidget is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_scale_widget.h:94: Warning: Member colorBarInterval() const  (function) of class QwtScaleWidget is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_scale_widget.h:95: Warning: Member colorMap() const  (function) of class QwtScaleWidget is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_scale_widget.h:103: Warning: Member drawColorBar(QPainter *painter, const QRect &rect) const  (function) of class QwtScaleWidget is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_scale_widget.h:110: Warning: Member colorBarRect(const QRect &) const  (function) of class QwtScaleWidget is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_scale_widget.cpp:312: Warning: Found unknown command `\para'
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_compass_rose.h:68: Warning: Member setShrinkFactor(double factor) (function) of class QwtSimpleCompassRose is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_compass_rose.h:69: Warning: Member shrinkFactor() const  (function) of class QwtSimpleCompassRose is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_spline.h:127: Warning: Member d_data (variable) of class QwtSpline is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_spline.cpp:123: Warning: argument 'x' of command @param is not found in the argument list of QwtSpline::setPoints(const QPolygonF &points)
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_spline.cpp:123: Warning: argument 'y' of command @param is not found in the argument list of QwtSpline::setPoints(const QPolygonF &points)
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_spline.cpp:123: Warning: argument 'size' of command @param is not found in the argument list of QwtSpline::setPoints(const QPolygonF &points)
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_spline.cpp:123: Warning: argument 'periodic' of command @param is not found in the argument list of QwtSpline::setPoints(const QPolygonF &points)
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_spline.cpp:123: Warning: The following parameters of QwtSpline::setPoints(const QPolygonF &points) are not documented:
+  parameter 'points'
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_curve_fitter.h:75: Warning: Member FitMode (enumeration) of class QwtSplineCurveFitter is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_curve_fitter.h:87: Warning: Member setSpline(const QwtSpline &) (function) of class QwtSplineCurveFitter is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_curve_fitter.h:88: Warning: Member spline() const  (function) of class QwtSplineCurveFitter is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_curve_fitter.h:89: Warning: Member spline() (function) of class QwtSplineCurveFitter is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_curve_fitter.h:91: Warning: Member setSplineSize(int size) (function) of class QwtSplineCurveFitter is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_curve_fitter.h:92: Warning: Member splineSize() const  (function) of class QwtSplineCurveFitter is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_thermo.h:99: Warning: Member ScalePos (enumeration) of class QwtThermo is not documented.
+/home/packer/CVS/PyQwt/pyqwt5/qwt-5.2/src/qwt_wheel.cpp:596: Warning: The following parameters of QwtWheel::draw(QPainter *painter, const QRect &update_rect) are not documented:
+  parameter 'update_rect'

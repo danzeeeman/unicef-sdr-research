@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Introduction &mdash; PyQwt v5.2.0 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '5.2.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="copyright" title="Copyright" href="copyright.html" />
+    <link rel="top" title="PyQwt v5.2.0 documentation" href="index.html" />
+    <link rel="next" title="Installation" href="installation.html" />
+    <link rel="prev" title="PyQwt User Manual" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="installation.html" title="Installation"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="PyQwt User Manual"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">PyQwt v5.2.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p>PyQwt is a set of Python bindings for the
+<a class="reference external" href="http://qwt.sourceforge.net">Qwt</a>
+library featuring fast plotting of Python lists and tuples and the
+powerful multi-dimensional arrays provided by
+<a class="reference external" href="http://numpy.scipy.org">NumPy</a>, the fundamental package for
+efficient scientific and engineering computing in Python. <a class="footnote-reference" href="#id8" id="id1">[1]</a></p>
+<div class="section" id="id2">
+<h2>NumPy<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>The <a class="reference external" href="http://numpy.scipy.org">NumPy</a> package extends Python with
+multi-dimensional arrays and a complete set of &#8216;standard&#8217; functions
+and operators to manipulate the arrays. NumPy turns Python into is an
+ideal language experimental numerical and scientific computing (as
+powerful as APL, MatLab, IDL and others, but much more elegant).</p>
+<p>If you do not have a mathematical background, you can think of a
+1-dimensional array as a column in a spreadsheet.  The spreadsheet
+lets you change whole columns element by element in one single
+statement. In a similar way, NumPy lets you change whole arrays
+element by element in one single statement as illustrated by the
+following snippet:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span>
+<span class="go">array([ 0.,  3.,  6.,  9.])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span>
+<span class="go">array([ 0.        ,  0.14112001, -0.2794155 ,  0.41211849])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">*</span><span class="n">x</span>
+<span class="go">array([  0.,   9.,  36.,  81.])</span>
+</pre></div>
+</div>
+<p>The statement:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>returns a NumPy array of 4 equidistant points from 0 to 9 inclusive:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">array</span><span class="p">([</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">3.</span><span class="p">,</span> <span class="mf">6.</span><span class="p">,</span> <span class="mf">9.</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>The statements <tt class="docutils literal"><span class="pre">y</span> <span class="pre">=</span> <span class="pre">np.sin(x)</span></tt> and <tt class="docutils literal"><span class="pre">x*x</span></tt> show that NumPy
+arrays are manipulated element by element.
+All this in has been coded in C, for a manifold speedup with respect
+to pure Python.</p>
+<p>You can think of a 2-dimension array as a spreadsheet: in both cases
+you you can operate on blocks, columns, rows, slices of colums, slices
+of rows or individual elements.</p>
+<p>Want to learn more?
+Look at the
+<a class="reference external" href="http://www.scipy.org/Tentative_NumPy_Tutorial">Tentative NumPy Tutorial</a>
+for a tutorial or at the
+<a class="reference external" href="http://www.tramy.us/numpybook.pdf">Guide to NumPy</a>
+for an advanced book.</p>
+</div>
+<div class="section" id="id4">
+<h2>Qwt<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://qwt.sourceforge.net">Qwt</a> is a C++ library based on the
+<a class="reference external" href="http://trolltech.com/products/qt">Qt GUI framework</a>.
+The Qwt library contains widgets useful for writing technical,
+scientific, and financial programs.
+It includes the following widgets:</p>
+<dl class="docutils">
+<dt>QwtCompass</dt>
+<dd>a very fancy QDial-like widget to display and control a direction.</dd>
+<dt>QwtCounter</dt>
+<dd>a QSpinBox-like widget to display and control a bounded floating
+point value.</dd>
+<dt>QwtDial</dt>
+<dd>a QDial-like widget to display and control a floating point value.</dd>
+<dt>QwtKnob</dt>
+<dd>a potentiometer-like widget to display and control a bounded
+floating point value.</dd>
+<dt>QwtPlot</dt>
+<dd>a widget to plot data in two dimensions.</dd>
+<dt>QwtSlider</dt>
+<dd>a QSlider-like widget to display and control a bounded floating
+point value.</dd>
+<dt>QwtThermo</dt>
+<dd>a thermometer-like widget to display a floating point value.</dd>
+<dt>QwtWheel</dt>
+<dd>a wheel-like widget with its axis parallel to the computer screen
+to control a floating point value over a very large range in very
+small steps.</dd>
+</dl>
+<p>See the <a class="reference external" href="http://qwt.sourceforge.net">Qwt manual</a> for a complete
+overview of the Qwt library.</p>
+</div>
+<div class="section" id="pyqwt-with-numpy">
+<h2>PyQwt with NumPy<a class="headerlink" href="#pyqwt-with-numpy" title="Permalink to this headline">¶</a></h2>
+<p>PyQwt is mostly used to write graphical user interface applications.
+However, the following snippet shows how to use PyQwt in combination
+with NumPy from the command line interpreter.
+Line by line explanations follow the snippet:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">PyQt4.Qt</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">PyQt4.Qwt5</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">PyQt4.Qwt5.qplt</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">application</span> <span class="o">=</span> <span class="n">QApplication</span><span class="p">([])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mf">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mf">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p</span> <span class="o">=</span> <span class="n">Plot</span><span class="p">(</span>
+<span class="gp">... </span> <span class="n">Curve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">Pen</span><span class="p">(</span><span class="n">Magenta</span><span class="p">,</span> <span class="mf">2</span><span class="p">),</span> <span class="s">&quot;cos(x)&quot;</span><span class="p">),</span>
+<span class="gp">... </span> <span class="n">Curve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">Pen</span><span class="p">(</span><span class="n">Red</span><span class="p">),</span> <span class="s">&quot;exp(x)&quot;</span><span class="p">,</span> <span class="n">Y2</span><span class="p">),</span>
+<span class="gp">... </span> <span class="n">Axis</span><span class="p">(</span><span class="n">Y2</span><span class="p">,</span> <span class="n">Log</span><span class="p">),</span>
+<span class="gp">... </span> <span class="s">&quot;PyQwt using Qwt-</span><span class="si">%s</span><span class="s"> -- http://qwt.sf.net&quot;</span> <span class="o">%</span> <span class="n">QWT_VERSION_STR</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">QPixmap</span><span class="o">.</span><span class="n">grabWidget</span><span class="p">(</span><span class="n">p</span><span class="p">)</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s">&#39;cli-plot-1.png&#39;</span><span class="p">,</span> <span class="s">&#39;PNG&#39;</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="mf">0</span><span class="p">:</span><span class="o">-</span><span class="mf">1</span><span class="p">:</span><span class="mf">10</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+<span class="gp">... </span> <span class="n">Curve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mf">4</span><span class="p">),</span> <span class="n">Symbol</span><span class="p">(</span><span class="n">Circle</span><span class="p">,</span> <span class="n">Yellow</span><span class="p">),</span> <span class="s">&quot;circle&quot;</span><span class="p">),</span>
+<span class="gp">... </span> <span class="n">Curve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mf">4</span><span class="p">),</span> <span class="n">Pen</span><span class="p">(</span><span class="n">Blue</span><span class="p">),</span> <span class="n">Symbol</span><span class="p">(</span><span class="n">Square</span><span class="p">,</span> <span class="n">Cyan</span><span class="p">),</span> <span class="s">&quot;square&quot;</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">QPixmap</span><span class="o">.</span><span class="n">grabWidget</span><span class="p">(</span><span class="n">p</span><span class="p">)</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s">&#39;cli-plot-2.png&#39;</span><span class="p">,</span> <span class="s">&#39;PNG&#39;</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>The statements:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">PyQt4.Qt</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">PyQt4.Qwt5</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">PyQt4.Qwt5.qplt</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<p>import numpy, PyQt4, Qwt5 and qplt.
+The statement:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">application</span> <span class="o">=</span> <span class="n">QApplication</span><span class="p">([])</span>
+</pre></div>
+</div>
+<p>initializes and starts the Qt library so that it handles mouse
+movements, mouse button presses, and keyboard key presses. <a class="footnote-reference" href="#id9" id="id6">[2]</a>
+The statement:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mf">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mf">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>creates an array with elements increasing from -2*np.pi to 2*np.pi in
+steps of 0.01.
+The statement:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">p</span> <span class="o">=</span> <span class="n">Plot</span><span class="p">(</span>
+<span class="gp">... </span> <span class="n">Curve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">Pen</span><span class="p">(</span><span class="n">Magenta</span><span class="p">,</span> <span class="mf">2</span><span class="p">),</span> <span class="s">&quot;cos(x)&quot;</span><span class="p">),</span>
+<span class="gp">... </span> <span class="n">Curve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">Pen</span><span class="p">(</span><span class="n">Red</span><span class="p">),</span> <span class="s">&quot;exp(x)&quot;</span><span class="p">,</span> <span class="n">Y2</span><span class="p">),</span>
+<span class="gp">... </span> <span class="n">Axis</span><span class="p">(</span><span class="n">Y2</span><span class="p">,</span> <span class="n">Log</span><span class="p">),</span>
+<span class="gp">... </span> <span class="s">&quot;PyQwt using Qwt-</span><span class="si">%s</span><span class="s"> -- http://qwt.sf.net&quot;</span> <span class="o">%</span> <span class="n">QWT_VERSION_STR</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>creates and shows a plot widget with two curves and an additional
+right vertical logarithmic axis.
+The statement:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">QPixmap</span><span class="o">.</span><span class="n">grabWidget</span><span class="p">(</span><span class="n">p</span><span class="p">)</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s">&#39;cli-plot-1.png&#39;</span><span class="p">,</span> <span class="s">&#39;PNG&#39;</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>takes a snapshot of the plot widget and saves it into a file:</p>
+<img alt="_images/cli-plot-1.png" src="_images/cli-plot-1.png" />
+<p>The statement:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="mf">0</span><span class="p">:</span><span class="o">-</span><span class="mf">1</span><span class="p">:</span><span class="mf">10</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>creates a new array from the old one by selecting every tenth element
+start from the index 0.
+The statement:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">p</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+<span class="gp">... </span> <span class="n">Curve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mf">4</span><span class="p">),</span> <span class="n">Symbol</span><span class="p">(</span><span class="n">Circle</span><span class="p">,</span> <span class="n">Yellow</span><span class="p">),</span> <span class="s">&quot;circle&quot;</span><span class="p">),</span>
+<span class="gp">... </span> <span class="n">Curve</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mf">4</span><span class="p">),</span> <span class="n">Pen</span><span class="p">(</span><span class="n">Blue</span><span class="p">),</span> <span class="n">Symbol</span><span class="p">(</span><span class="n">Square</span><span class="p">,</span> <span class="n">Cyan</span><span class="p">),</span>
+<span class="gp">... </span> <span class="s">&quot;square&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>plots two new curves on the widget using the new array.
+The statement:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">QPixmap</span><span class="o">.</span><span class="n">grabWidget</span><span class="p">(</span><span class="n">p</span><span class="p">)</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s">&#39;cli-plot-2.png&#39;</span><span class="p">,</span> <span class="s">&#39;PNG&#39;</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>takes a snapshot of the plot widget and saves it into a file:</p>
+<img alt="_images/cli-plot-2.png" src="_images/cli-plot-2.png" />
+</div>
+<div class="section" id="getting-help">
+<span id="id7"></span><h2>Getting help<a class="headerlink" href="#getting-help" title="Permalink to this headline">¶</a></h2>
+<p>PyQwt and PyQwt3D have a low volume mailing list to answer questions
+on installation problems and how to use the more advanced features.
+In particular, many of the more advanced examples using object
+oriented programming have been written to answer questions.
+Most questions help to improve PyQwt!</p>
+<p>Please,
+<a class="reference external" href="http://lists.sourceforge.net/lists/listinfo/pyqwt-users">subscribe</a>
+to the mailing list before posting on the
+<a class="reference external" href="mailto:pyqwt-users&#37;&#52;&#48;lists&#46;sourceforge&#46;net">mailing list</a>.</p>
+<p>The mailing list is a subscribers only list and mail from
+non-subscribers is deferred to filter spam (more than 95 % of the mail
+by non-subscribers is spam and mail by non-subscribers is rejected).</p>
+<p>The mailing list is configured to garantee anonimity as much as
+possible.</p>
+<table class="docutils footnote" frame="void" id="id8" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>The older numerical Python extension packages,
+<a class="reference external" href="http://www.stsci.edu/resources/software_hardware/numarray">numarray</a>
+and
+<a class="reference external" href="http://numpy.scipy.org/">Numeric</a>
+are deprecated.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id9" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id6">[2]</a></td><td>PyQt-4.3.x and later support displaying Qt widgets from the
+Python command line interpreter.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Introduction</a><ul>
+<li><a class="reference external" href="#id2">NumPy</a></li>
+<li><a class="reference external" href="#id4">Qwt</a></li>
+<li><a class="reference external" href="#pyqwt-with-numpy">PyQwt with NumPy</a></li>
+<li><a class="reference external" href="#getting-help">Getting help</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="index.html"
+                                  title="previous chapter">PyQwt User Manual</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="installation.html"
+                                  title="next chapter">Installation</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="_sources/introduction.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+          <div id="searchbox" style="display: none">
+            <h3>Quick search</h3>
+              <form class="search" action="search.html" method="get">
+                <input type="text" name="q" size="18" />
+                <input type="submit" value="Go" />
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+              <p class="searchtip" style="font-size: 90%">
+              Enter search terms or a module, class or function name.
+              </p>
+          </div>
+          <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="installation.html" title="Installation"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="PyQwt User Manual"
+             >previous</a> |</li>
+        <li><a href="index.html">PyQwt v5.2.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+      &copy; <a href="copyright.html">Copyright</a> 2001-2009, Gerard Vermeulen.
+      Last updated on Aug 02, 2009.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.2.
+    </div>
+  </body>
+</html>
