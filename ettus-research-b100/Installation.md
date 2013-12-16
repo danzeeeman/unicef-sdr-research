@@ -61,3 +61,22 @@ http://pyqwt.sourceforge.net/download.html
 If you've already built GNU Radio, first delete CMakeCache.txt in the top build directory. You should then only have to 'make clean' in gr-qtgui.
 
 Run cmake and make like you would normally. With the environmental variables pointing to the new PyQT and PyQWT versions we've installed all gr-qtui displays and widgets should work properly now.
+
+#### GNU Radio Install on Mac OSX 10.9 Mavericks
+
+Download and install Xcode Version 5.0.2+ from the Apple App Store.  You will need to install the Xcode Command Line Tools which can be also be downloaded from the Apple App Store or run the command:
+
+	$ sudo xcode-select --install
+	$ sudo xcode-build -license
+
+Install Macports 2.2.1 - http://www.macports.org/install.php
+
+Download and install XQuartz - http://xquartz.macosforge.org/landing/
+
+	$ port install gr-osmsdr
+	$ port info gnuradio
+	$ port install gnuradio +full
+	
+After this is complete, you should be able to run GNU Companion by using the command:
+
+	$ gnuradio-companion
