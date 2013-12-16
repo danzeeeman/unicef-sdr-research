@@ -80,3 +80,5 @@ Download and install XQuartz - http://xquartz.macosforge.org/landing/
 After this is complete, you should be able to run GNU Companion by using the command:
 
 	$ gnuradio-companion
+	
+This is based on the tutorial found [here.](http://penturalabs.wordpress.com/2013/09/14/gnuradio-osx-installation-guide/)
