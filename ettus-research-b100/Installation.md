@@ -67,7 +67,7 @@ Run cmake and make like you would normally. With the environmental variables poi
 Download and install Xcode Version 5.0.2+ from the Apple App Store.  You will need to install the Xcode Command Line Tools which can be also be downloaded from the Apple App Store or run the command:
 
 	$ sudo xcode-select --install
-	$ sudo xcode-build -license
+	$ sudo xcodebuild -license
 
 Install Macports 2.2.1 - http://www.macports.org/install.php
 
