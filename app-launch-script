@@ -1,0 +1,56 @@
+  GNU nano 2.2.6            File: launchOpenBTS.sh                              
+
+#!/bin/bash
+
+clear
+
+smqueue=~/OpenBts/public/smqueue/trunk/smqueue
+sipauthserve=~/OpenBts/public/subscriberRegistry/trunk
+openbts=~/OpenBts/public/openbts/trunk/apps
+
+echo "Launching OpenBTS components"
+
+sudo ufw disable
+
+sudo ifconfig eth0 192.168.10.1 netmask 255.255.255.0 promisc
+
+uhd_find_devices
+
+if [ uhd_find_device ]
+then
+        echo "Successfully found the USRP"
+
+else
+        echo "Unable to locate USRP"
+
+fi
+
+echo "Launching Smqueue"
+echo $smqueue
+cd $smqueue
+
+gnome-terminal -e "sudo ./smqueue" --window-with-profile=stayopen
+
+echo "Launching SipAuthServer"
+
+cd $sipauthserve
+
+gnome-terminal -e "sudo ./sipauthserve" --window-with-profile=stayopen
+
+echo "intitializing"
+sleep 5
+
+echo "Launching OpenBTS"
+
+cd $openbts
+
+gnome-terminal -e "sudo ./OpenBTS" --window-with-profile=stayopen
+
+sleep 15
+
+echo "OpenBTS Running"
+
+gnome-terminal -e "sudo ./OpenBTSCLI" --window-with-profile=stayopen
+
+echo "Everything is Running"
+echo "The End"
