@@ -30,7 +30,7 @@ We'll set up a separate directory to install into to make it keep it nicely sepa
 
 First, set up your environment
 
-Edit ./bashrc by adding or amending the following variables:
+Edit ~/.bashrc by adding or amending the following variables:
 
 	export PATH=/opt/qt/bin:$PATH
 	export LD_LIBRARY_PATH=/opt/qt/lib:/usr/local/lib:$LD_LIBRARY_PATH
