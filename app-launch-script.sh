@@ -42,4 +42,7 @@ echo "OpenBTS Running"
 gnome-terminal -e "sudo ./OpenBTSCLI"
 
 echo "Everything is Running"
+
+gnome-terminal -e "sudo asterisk -vvvvvvvvr"
+
 echo "The End"
