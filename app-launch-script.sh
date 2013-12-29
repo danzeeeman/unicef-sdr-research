@@ -22,28 +22,24 @@ else
 fi
 
 echo "Launching Smqueue"
-echo $smqueue
 cd $smqueue
 
-gnome-terminal -e "sudo ./smqueue" --window-with-profile=stayopen  #This profile leaves the termial window open after running the command.
+gnome-terminal -e "sudo ./smqueue"
 
 echo "Launching SipAuthServe"
 cd $sipauthserve
+gnome-terminal -e "sudo ./sipauthserve"
 
-gnome-terminal -e "sudo ./sipauthserve" --window-with-profile=stayopen
-
-echo "intitializing"
 sleep 5
 echo "Launching OpenBTS"
 cd $openbts
 
-gnome-terminal -e "sudo ./OpenBTS" --window-with-profile=stayopen
+gnome-terminal -e "sudo ./OpenBTS"
 
 sleep 15 #give OpenBTS a chance to launch
-
 echo "OpenBTS Running"
 
-gnome-terminal -e "sudo ./OpenBTSCLI" --window-with-profile=stayopen
+gnome-terminal -e "sudo ./OpenBTSCLI"
 
 echo "Everything is Running"
 echo "The End"
