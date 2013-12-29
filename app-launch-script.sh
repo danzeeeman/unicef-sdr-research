@@ -12,13 +12,13 @@ sudo ufw disable
 sudo ifconfig eth0 192.168.10.1 netmask 255.255.255.0 promisc
 uhd_find_devices
 
-if [ uhd_find_device ]  #This doesnt really do anything.  Not sure how to test if uhd_find_devices works or not
+if [ uhd_find_device -eq "No UHD devices found" ]  #This doesnt really do anything.  Not sure how to test if uhd_find_devices works or not
 then
         echo "Successfully found the USRP"
 
 else
         echo "Unable to locate USRP"
-
+        exit
 fi
 
 echo "Launching Smqueue"
