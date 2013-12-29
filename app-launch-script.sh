@@ -23,7 +23,6 @@ fi
 
 echo "Launching Smqueue"
 cd $smqueue
-
 gnome-terminal -e "sudo ./smqueue"
 
 echo "Launching SipAuthServe"
@@ -31,18 +30,17 @@ cd $sipauthserve
 gnome-terminal -e "sudo ./sipauthserve"
 
 sleep 5
+
 echo "Launching OpenBTS"
 cd $openbts
-
 gnome-terminal -e "sudo ./OpenBTS"
 
 sleep 15 #give OpenBTS a chance to launch
-echo "OpenBTS Running"
 
+echo "OpenBTS is now running"
 gnome-terminal -e "sudo ./OpenBTSCLI"
 
-echo "Everything is Running"
-
+echo "Launching Asterisk"
 gnome-terminal -e "sudo asterisk -vvvvvvvvr"
 
 echo "The End"
