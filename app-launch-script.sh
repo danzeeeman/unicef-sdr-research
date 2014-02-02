@@ -5,6 +5,7 @@ clear
 smqueue=~/OpenBts/public/smqueue/trunk/smqueue
 sipauthserve=~/OpenBts/public/subscriberRegistry/trunk
 openbts=~/OpenBts/public/openbts/trunk/apps
+telesource=~/www/telesource
 
 echo "Launching OpenBTS components"
 
@@ -42,5 +43,13 @@ gnome-terminal -e "sudo ./OpenBTSCLI"
 
 echo "Launching Asterisk"
 gnome-terminal -e "sudo asterisk -vvvvvvvvr"
+
+echo "Launching Telesource server"
+cd $telesource
+gnome-terminal -e "foreman run nodemon app.coffee" # Run the telesource server
+sleep 8
+
+echo "Open browser"
+gnome-terminal -e "chromium-browser localhost:5000"
 
 echo "The End"
